@@ -1,0 +1,21 @@
+# Loqelo Git Ignore
+# Exclude raw archive zips and large source files from repository
+*.zip
+ui ux.zip
+video.zip
+logo.zip
+
+# Contest Brief file
+Brief.pdf
+
+# Raw unorganized folders (already optimized inside assets/)
+/logo/
+/ui ux/
+/video/
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
