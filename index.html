@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loqelo — Everything your place needs | Pre-Launch</title>
+  <meta name="description" content="Loqelo is the next-generation platform connecting home, garden, and office needs with verified local professionals. Launching February 2027. Join the early access waitlist today.">
+  <meta name="keywords" content="Loqelo, home services, contractors, local pros, garden maintenance, office cleaning, pre-launch, waitlist">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://loqelo.com/">
+  <meta property="og:title" content="Loqelo — Everything your place needs">
+  <meta property="og:description" content="Find trusted local professionals for home, garden, and office. Launching February 2027.">
+  <meta property="og:image" content="assets/logo/Loqelo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/loqelo-icon.svg">
+  <link rel="apple-touch-icon" href="assets/logo/Loqelo ICON.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Loqelo",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "description": "Platform connecting customers with verified service providers for home, garden, and office."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand-logo-link" aria-label="Loqelo Home">
+        <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" class="brand-logo-img">
+      </a>
+
+      <nav id="site-main-nav" aria-label="Main Navigation">
+        <div class="mobile-drawer-header">
+          <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" class="brand-logo-img" style="height:28px;">
+          <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#how-it-works" class="nav-link" data-i18n="howItWorksLabel">How It Works</a></li>
+          <li><a href="#showcase" class="nav-link" data-i18n="screensLabel">Platform</a></li>
+          <li><a href="#categories" class="nav-link" data-i18n="catLabel">Categories</a></li>
+          <li><a href="#for-providers" class="nav-link" data-i18n="contractorCardBadge">For Providers</a></li>
+          <li><a href="dashboard.html" class="nav-link" style="color:var(--teal); font-weight:700;">Dashboard <span class="badge-live-pill">Live App</span></a></li>
+        </ul>
+
+        <div class="mobile-drawer-subpages">
+          <div class="mobile-drawer-title">Platform Experience Apps</div>
+          <div class="mobile-drawer-grid">
+            <a href="post-job.html" class="mobile-drawer-pill"><span>📝</span> Post a Job</a>
+            <a href="client-orders.html" class="mobile-drawer-pill"><span>📋</span> Orders</a>
+            <a href="quotes.html" class="mobile-drawer-pill"><span>💰</span> Quotes</a>
+            <a href="contractor-radar.html" class="mobile-drawer-pill"><span>📡</span> Radar</a>
+            <a href="bidding.html" class="mobile-drawer-pill"><span>🤝</span> Bidding</a>
+            <a href="chat.html" class="mobile-drawer-pill"><span>💬</span> Chat</a>
+          </div>
+        </div>
+
+        <div class="mobile-drawer-cta">
+          <a href="#waitlist" class="btn btn-primary" data-i18n="btnJoinWaitlist">Join the Waitlist</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Seamless Custom Worldwide Language Selector (100% Brand Match) -->
+        <div class="custom-lang-selector-wrap">
+          <button class="custom-lang-btn" id="custom-lang-btn" aria-haspopup="true" aria-expanded="false" title="Change Language">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="custom-current-lang">🇬🇧 English</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <ul class="custom-lang-dropdown" id="custom-lang-dropdown">
+            <li class="custom-lang-opt active" data-lang="en">🇬🇧 English</li>
+            <li class="custom-lang-opt" data-lang="pl">🇵🇱 Polski</li>
+            <li class="custom-lang-opt" data-lang="de">🇩🇪 Deutsch</li>
+            <li class="custom-lang-opt" data-lang="fr">🇫🇷 Français</li>
+            <li class="custom-lang-opt" data-lang="es">🇪🇸 Español</li>
+            <li class="custom-lang-opt" data-lang="nl">🇳🇱 Nederlands</li>
+            <li class="custom-lang-opt" data-lang="it">🇮🇹 Italiano</li>
+            <li class="custom-lang-opt" data-lang="bn">🇧🇩 বাংলা</li>
+            <li class="custom-lang-opt" data-lang="ar">🇸🇦 العربية</li>
+            <li class="custom-lang-opt" data-lang="zh-CN">🇨🇳 中文</li>
+          </ul>
+        </div>
+        <div id="google_translate_element"></div>
+
+        <a href="#waitlist" class="btn btn-primary" data-i18n="btnJoinWaitlist">Join the Waitlist</a>
+
+        <!-- Responsive Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-glow-bg hero-glow-1"></div>
+    <div class="hero-glow-bg hero-glow-2"></div>
+    <div class="container hero-grid">
+      
+      <!-- Hero Left: Messaging & Interactive Search Simulator -->
+      <div class="hero-content">
+        <div class="badge-pill badge-teal hero-pre-badge">
+          <span class="badge-pulse-dot"></span>
+          <span data-i18n="badgeLaunch">Planned Global Launch • February 2027</span>
+        </div>
+
+        <div class="hero-tagline-quote">
+          <span>“</span><span data-i18n="tagline">Everything your place needs.</span><span>”</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="heroTitle">
+          Find trusted local pros for home, garden, and office.
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDesc">
+          Describe what you need in your own words. Loqelo instantly connects you with verified local contractors and delivers competitive quotes in minutes.
+        </p>
+
+        <!-- Interactive Need Input Simulator -->
+        <div class="hero-interactive-box">
+          <div class="interactive-box-label">
+            <span data-i18n="describeLabel">Describe your need in your own words</span>
+            <span style="font-size: 11px; color: var(--teal); font-weight: 700;">AI SMART MATCH</span>
+          </div>
+          <div class="interactive-box-input-row">
+            <span data-i18n="sampleInput1">I need to</span>
+            <span class="tag-highlight tag-clean" data-i18n="sampleInput2">clean my house</span>,
+            <span class="tag-highlight tag-window" data-i18n="sampleInput3">wash my windows</span>,
+            <span data-i18n="sampleInput4">and</span>
+            <span class="tag-highlight tag-car" data-i18n="sampleInput5">wash my car.</span>
+          </div>
+          <div class="interactive-detected-pills">
+            <span style="font-size: 12.5px; color: var(--mute);" data-i18n="detectedServices">We found 3 matching services:</span>
+            <span class="detected-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="tagCleaning">Cleaning</span>
+            </span>
+            <span class="detected-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="tagWindow">Window cleaning</span>
+            </span>
+            <span class="detected-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="tagCar">Car washing</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#waitlist" class="btn btn-primary btn-lg" data-i18n="btnJoinWaitlist">Join the Waitlist</a>
+          <a href="#video" class="btn btn-secondary btn-lg" data-i18n="btnWatchVideo">Watch Demo Video</a>
+        </div>
+
+        <div class="hero-trust-row">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span data-i18n="verifiedPros">Verified & Rated Providers</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span data-i18n="freeToPost">100% Free to Post, No Obligation</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+            <span data-i18n="europeWide">Expanding Across Europe & Global</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: High-Res Visual Stack with Floating Interactive Cards -->
+      <div class="hero-visual-col">
+        <div class="hero-visual-card">
+          <img src="assets/images/photos/hero.jpg" alt="Professional window cleaner" class="hero-main-photo">
+          
+          <!-- Floating Overlay 1 -->
+          <div class="floating-overlay-card card-top-right">
+            <div class="avatar-circle" style="background: var(--mint-d);">✓</div>
+            <div>
+              <div class="float-info-title">Window cleaning</div>
+              <div class="float-info-sub">12 windows, both sides</div>
+            </div>
+          </div>
+
+          <!-- Floating Overlay 2 -->
+          <div class="floating-overlay-card card-bottom-left">
+            <div class="avatar-circle">FN</div>
+            <div>
+              <div class="float-info-title">Fresh Nest Cleaning</div>
+              <div class="float-info-sub">
+                <span class="star-rating">★★★★★</span>
+                <span style="font-weight: 700; color: var(--ink);">5.0</span>
+                <span>(301 reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROMOTIONAL VIDEO SECTION
+       ========================================================================== -->
+  <section class="video-section" id="video">
+    <div class="container text-center">
+      <span class="section-label" data-i18n="tagline">Everything your place needs.</span>
+      <h2 class="section-title" data-i18n="videoSectionTitle">See Loqelo in Action</h2>
+      <p class="section-subtitle" data-i18n="videoSectionSub">
+        Experience how smoothly requests turn into offers, jobs, and happy spaces.
+      </p>
+
+      <div class="video-container-box paused" id="video-box">
+        <video id="promo-video" class="video-player-element" preload="metadata" playsinline poster="assets/images/photos/home.jpg">
+          <source src="assets/video/loqelo-promo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <button class="video-center-overlay-btn" id="video-center-btn" aria-label="Play Promotional Video">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </button>
+
+        <div class="video-custom-controls">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <button class="video-play-btn" id="video-bottom-btn" aria-label="Play / Pause">&#9658;</button>
+            <span class="video-badge-text">Loqelo Concept Preview</span>
+          </div>
+          <div>
+            <button class="btn btn-secondary" id="video-mute-btn" style="padding:6px 12px; font-size:12px;">🔊</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW LOQELO WORKS (4-STEP VISUAL FLOW)
+       ========================================================================== -->
+  <section class="how-it-works-section" id="how-it-works">
+    <div class="container text-center">
+      <span class="section-label" data-i18n="howItWorksLabel">How Loqelo Works</span>
+      <h2 class="section-title" data-i18n="howItWorksTitle">From one sentence to the right pro.</h2>
+      <p class="section-subtitle" data-i18n="howItWorksSub">
+        One seamless flow, from describing your project to picking the perfect contractor.
+      </p>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number-badge">01</div>
+          <div class="step-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h3 class="step-title" data-i18n="step1Title">1. Describe your need</h3>
+          <p class="step-desc" data-i18n="step1Desc">Write one sentence in plain words or snap a photo. Loqelo detects your requirements instantly.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number-badge">02</div>
+          <div class="step-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          <h3 class="step-title" data-i18n="step2Title">2. We find the services</h3>
+          <p class="step-desc" data-i18n="step2Desc">Our smart matching engine alerts qualified, verified local specialists in your exact area.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number-badge">03</div>
+          <div class="step-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="step-title" data-i18n="step3Title">3. Receive transparent offers</h3>
+          <p class="step-desc" data-i18n="step3Desc">Review competitive quotes with fixed pricing, clear timelines, and verified customer ratings.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number-badge">04</div>
+          <div class="step-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+          </div>
+          <h3 class="step-title" data-i18n="step4Title">4. Choose your pro</h3>
+          <p class="step-desc" data-i18n="step4Desc">Compare prices and reviews without spam or phone calls, then confirm with full confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BUILT-IN PLATFORM WORKFLOWS & INTERACTIVE FEATURES
+       Directly built from Client Specification & Reference Interfaces
+       ========================================================================== -->
+  <section class="screens-showcase-section" id="showcase">
+    <div class="container text-center">
+      <span class="section-label" data-i18n="screensLabel">Platform Experience</span>
+      <h2 class="section-title">Fully Functional Interactive Platform Studio</h2>
+      <p class="section-subtitle">
+        Interact with the live, fully coded options from the Loqelo platform below—from posting a job to receiving quotes, contractor radar, bidding, and in-app messaging.
+      </p>
+
+      <!-- Live Stage Wrapper -->
+      <div class="platform-live-stage-wrap">
+        <!-- Interactive Stage Tabs -->
+        <div class="platform-stage-nav-bar" id="live-stage-nav">
+          <button class="platform-stage-tab-btn active" data-tab="tab-post-job">
+            <span>📝</span> 1. Post a Job
+          </button>
+          <button class="platform-stage-tab-btn" data-tab="tab-client-panel">
+            <span>📋</span> 2. Client Dashboard (My Jobs)
+          </button>
+          <button class="platform-stage-tab-btn" data-tab="tab-quotes">
+            <span>🏷️</span> 3. Quotes & Price Spread
+          </button>
+          <button class="platform-stage-tab-btn" data-tab="tab-radar">
+            <span>📡</span> 4. Contractor Radar Map
+          </button>
+          <button class="platform-stage-tab-btn" data-tab="tab-bid">
+            <span>💼</span> 5. Send an Offer (Bid)
+          </button>
+          <button class="platform-stage-tab-btn" data-tab="tab-chat">
+            <span>💬</span> 6. In-App Direct Chat
+          </button>
+        </div>
+
+        <!-- Tab 1: Post a Job Interactive Feature -->
+        <div class="platform-stage-content" id="tab-post-job" style="display: block;">
+          <div class="live-post-job-container">
+            <div>
+              <div style="margin-bottom: 20px;">
+                <h3 style="font-size: 24px; color: var(--ink);">Post a job</h3>
+                <p style="color: var(--mute); font-size: 14px;">Takes about 2 minutes. It's free, and you only choose a provider if you like a quote.</p>
+              </div>
+
+              <!-- Step 1 -->
+              <div class="post-job-step-box">
+                <label style="font-weight: 700; color: var(--ink); display: block; margin-bottom: 8px;">
+                  <span class="step-num-pill">1</span> Describe the job
+                </label>
+                <textarea id="live-job-desc" class="form-input" style="height: 110px; resize: vertical;" placeholder="Tell providers what you need in your own words...">I need to clean my house, wash my windows, and wash my car. It's a 3-bedroom house, 14 windows (6 on the first floor). The car is a family SUV, inside and out.</textarea>
+                
+                <div style="margin-top: 10px;">
+                  <span style="font-size: 12px; font-weight: 600; color: var(--mute);">We recognised these services (click to remove or add):</span>
+                  <div class="service-chip-list">
+                    <span class="service-chip">Cleaning ✕</span>
+                    <span class="service-chip">Window cleaning ✕</span>
+                    <span class="service-chip">Car washing ✕</span>
+                    <span class="service-chip" style="background: var(--bg); color: var(--teal); border-style: dashed;">+ Add service</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="post-job-step-box">
+                <label style="font-weight: 700; color: var(--ink); display: block; margin-bottom: 8px;">
+                  <span class="step-num-pill">2</span> Photos and videos <span class="optional-tag">Optional, but providers quote faster with them</span>
+                </label>
+                <div class="file-drop-zone">
+                  <span class="file-badge-tag">📷 front-of-house.jpg</span>
+                  <span class="file-badge-tag">📷 living-room.jpg</span>
+                  <span class="file-badge-tag">🎥 suv.mp4</span>
+                  <span class="file-badge-tag">📄 floor-plan.pdf</span>
+                  <span class="file-badge-tag" style="background: var(--teal-50); color: var(--teal-d); cursor: pointer;">+ Add files</span>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="post-job-step-box">
+                <label style="font-weight: 700; color: var(--ink); display: block; margin-bottom: 8px;">
+                  <span class="step-num-pill">3</span> Where?
+                </label>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                  <div>
+                    <label style="font-size: 12px; color: var(--mute);">City</label>
+                    <input type="text" class="form-input" value="Amsterdam" style="padding: 10px 14px;">
+                  </div>
+                  <div>
+                    <label style="font-size: 12px; color: var(--mute);">Zip code</label>
+                    <input type="text" class="form-input" value="1077 AB" style="padding: 10px 14px;">
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-lg" id="btn-submit-live-job" style="width: 100%; padding: 14px;">
+                Post Job & Notify Matching Providers →
+              </button>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="job-glance-sidebar">
+              <div>
+                <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--mute);">Your Job At A Glance</span>
+                <img src="assets/images/photos/home.jpg" alt="Job preview" style="border-radius: var(--r-m); margin: 12px 0; height: 140px; object-fit: cover; width: 100%;">
+                <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">House, window & car cleaning</h4>
+                <p style="font-size: 12.5px; color: var(--teal); font-weight: 600;">Cleaning • Window cleaning • Car washing</p>
+                <div style="font-size: 12px; color: var(--mute); margin-top: 8px; line-height: 1.6;">
+                  📍 Amsterdam, 1077 AB<br>
+                  📅 Sat 10 Oct, ± 2 days<br>
+                  📎 3 photos • 1 video • 1 file
+                </div>
+              </div>
+
+              <div class="what-happens-box">
+                <strong style="font-size: 13.5px; color: #FFFFFF;">What happens next:</strong>
+                <ul>
+                  <li>⚡ <strong>34 matching providers</strong> nearby get notified</li>
+                  <li>⏱ Quotes arrive, usually within 2 hours</li>
+                  <li>🛡 Compare prices & reviews with zero obligation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Client Dashboard (My Jobs) -->
+        <div class="platform-stage-content" id="tab-client-panel" style="display: none;">
+          <div class="client-dashboard-panel">
+            <div class="dashboard-header-row">
+              <div>
+                <span style="font-size: 12px; color: var(--mute); font-weight: 600;">Good afternoon,</span>
+                <h3 style="font-size: 24px; color: var(--ink);">Anna Kowalska (Client)</h3>
+              </div>
+              <div class="user-stat-pills">
+                <div class="user-stat-pill">
+                  <strong style="color: var(--teal); font-size: 16px;">23</strong><br>Orders
+                </div>
+                <div class="user-stat-pill">
+                  <strong style="color: var(--mint-d); font-size: 16px;">92%</strong><br>Completion
+                </div>
+                <div class="user-stat-pill">
+                  <strong style="color: var(--amber); font-size: 16px;">★ 4.8</strong><br>Rating
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-bottom: 20px;">
+              <button class="btn btn-primary" style="padding: 6px 16px; font-size: 13px;">Active Orders (4)</button>
+              <button class="btn btn-secondary" style="padding: 6px 16px; font-size: 13px;">Completed (19)</button>
+            </div>
+
+            <!-- Orders Cards List -->
+            <div class="orders-cards-list">
+              <!-- Order 1 -->
+              <div class="order-live-card">
+                <div style="display: flex; gap: 16px; align-items: center;">
+                  <img src="assets/images/photos/home.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Order">
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">House, window & car cleaning</h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">Amsterdam-Zuid, 1077 AB • Sat 10 Oct • Bids close in 1d 6h</p>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span class="status-badge-live status-bids">● 5 bids received</span>
+                  <button class="btn btn-primary" id="btn-view-quotes-demo" style="padding: 8px 18px; font-size: 13px;">View Quotes →</button>
+                </div>
+              </div>
+
+              <!-- Order 2 -->
+              <div class="order-live-card">
+                <div style="display: flex; gap: 16px; align-items: center;">
+                  <img src="assets/images/photos/garden.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Garden">
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Lawn care & hedge trimming</h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">Amstelveen, 1181 JA • Wed 14 Oct • 12 providers viewed it</p>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span class="status-badge-live status-waiting">● Waiting for bids</span>
+                  <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;">Details →</button>
+                </div>
+              </div>
+
+              <!-- Order 3 -->
+              <div class="order-live-card">
+                <div style="display: flex; gap: 16px; align-items: center;">
+                  <img src="assets/images/photos/inst.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Installations">
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Bathroom tap & shower repair</h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">Amsterdam-Oost • Sat 3 Oct • Bidding closed: 7 bids</p>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span class="status-badge-live status-contractor">● Contractor selected</span>
+                  <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;">Details →</button>
+                </div>
+              </div>
+
+              <!-- Order 4 -->
+              <div class="order-live-card">
+                <div style="display: flex; gap: 16px; align-items: center;">
+                  <img src="assets/images/photos/moving.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Moving">
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Move 2-room flat to Utrecht</h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">VanGo Movers on the way</p>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span class="status-badge-live status-progress">● In progress</span>
+                  <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;">Track Move →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Quotes Received & Price Spread Comparison -->
+        <div class="platform-stage-content" id="tab-quotes" style="display: none;">
+          <div class="quotes-live-container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+              <div>
+                <span class="status-badge-live status-bids" style="margin-bottom: 8px;">● 5 offers received</span>
+                <h3 style="font-size: 24px; color: var(--ink);">House, window & car cleaning</h3>
+                <p style="color: var(--mute); font-size: 13.5px;">📍 Amsterdam-Zuid, 1077 AB • Preferred Sat 10 Oct • Bids close in 1d 6h</p>
+              </div>
+              <button class="btn btn-primary" id="btn-demo-post-another" style="padding: 8px 16px; font-size: 13px;">+ Post New Job</button>
+            </div>
+
+            <!-- Price Spread Bar Visualization -->
+            <div class="price-spread-meter-box">
+              <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: var(--ink);">
+                <span>Lowest: €295</span>
+                <span style="color: var(--teal-d);">Price spread of all offers</span>
+                <span>Highest: €420</span>
+              </div>
+              <div class="spread-line-visual">
+                <div class="spread-avg-callout">avg €346</div>
+                <span class="spread-dot" style="left: 10%; background: #2E9A77;">GC</span>
+                <span class="spread-dot" style="left: 28%; background: #E8912C;">IM</span>
+                <span class="spread-dot" style="left: 48%; background: #077E88;">CP</span>
+                <span class="spread-dot" style="left: 65%; background: #0677BA;">BC</span>
+                <span class="spread-dot" style="left: 92%; background: #0C2229;">FN</span>
+              </div>
+            </div>
+
+            <!-- 3 Received Contractor Bids -->
+            <div>
+              <!-- Bid 1: CleanPro -->
+              <div class="quote-pro-card" style="border-left: 4px solid var(--teal);">
+                <div style="display: flex; gap: 14px; align-items: center;">
+                  <div class="avatar-circle">CP</div>
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 2px;">
+                      CleanPro Amsterdam <span class="status-badge-live status-bids" style="font-size: 11px;">Best Match</span>
+                    </h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">★ 4.9 (212 reviews) • 126 jobs done • 97% success</p>
+                    <p style="font-size: 13px; color: var(--ink2); margin-top: 6px;">“I can start work this coming Monday. Windows inside and out, SUV full valet.”</p>
+                  </div>
+                </div>
+                <div style="text-align: right; min-width: 140px;">
+                  <div class="quote-price-tag">€340</div>
+                  <span style="font-size: 12px; color: var(--mute); display: block; margin-bottom: 8px;">2 days • Fixed price</span>
+                  <button class="btn btn-primary" style="padding: 8px 22px; font-size: 13.5px;" onclick="alert('Congratulations! CleanPro Amsterdam has been selected. Starting project flow.')">Select Pro</button>
+                </div>
+              </div>
+
+              <!-- Bid 2: Glans & Co -->
+              <div class="quote-pro-card">
+                <div style="display: flex; gap: 14px; align-items: center;">
+                  <div class="avatar-circle" style="background: var(--mint-d);">GC</div>
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 2px;">
+                      Glans & Co <span class="status-badge-live status-progress" style="font-size: 11px;">Lowest Price</span>
+                    </h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">★ 4.7 (96 reviews) • 88 jobs done • 94% success</p>
+                    <p style="font-size: 13px; color: var(--ink2); margin-top: 6px;">“Lowest price, own ladders and water-fed poles for the first floor.”</p>
+                  </div>
+                </div>
+                <div style="text-align: right; min-width: 140px;">
+                  <div class="quote-price-tag">€295</div>
+                  <span style="font-size: 12px; color: var(--mute); display: block; margin-bottom: 8px;">3 days • Fixed price</span>
+                  <button class="btn btn-secondary" style="padding: 8px 22px; font-size: 13.5px;" onclick="alert('Glans & Co selected.')">Select Pro</button>
+                </div>
+              </div>
+
+              <!-- Bid 3: Fresh Nest -->
+              <div class="quote-pro-card">
+                <div style="display: flex; gap: 14px; align-items: center;">
+                  <div class="avatar-circle" style="background: #0677BA;">FN</div>
+                  <div>
+                    <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 2px;">
+                      Fresh Nest Cleaning <span class="status-badge-live status-contractor" style="font-size: 11px;">Fastest</span>
+                    </h4>
+                    <p style="font-size: 12.5px; color: var(--mute);">★ 5.0 (301 reviews) • 214 jobs done • 99% success</p>
+                    <p style="font-size: 13px; color: var(--ink2); margin-top: 6px;">“Team of 3, everything done in one day, eco products.”</p>
+                  </div>
+                </div>
+                <div style="text-align: right; min-width: 140px;">
+                  <div class="quote-price-tag">€410</div>
+                  <span style="font-size: 12px; color: var(--mute); display: block; margin-bottom: 8px;">1 day • Fixed price</span>
+                  <button class="btn btn-secondary" style="padding: 8px 22px; font-size: 13.5px;" onclick="alert('Fresh Nest selected.')">Select Pro</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Contractor Radar Map & Opportunities -->
+        <div class="platform-stage-content" id="tab-radar" style="display: none;">
+          <div class="radar-live-container">
+            <div>
+              <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 18px;">
+                <div class="avatar-circle" style="background: var(--mint-d); width: 48px; height: 48px; font-size: 18px;">AG</div>
+                <div>
+                  <h3 style="font-size: 20px; color: var(--ink); margin: 0;">ABC Garden ✓</h3>
+                  <span style="font-size: 13px; color: var(--mute);">Garden & outdoor • Amstelveen</span>
+                </div>
+              </div>
+
+              <div style="background: var(--deep); color: #fff; padding: 20px; border-radius: var(--r-m); margin-bottom: 20px;">
+                <span style="font-size: 11px; text-transform: uppercase; color: var(--mint); font-weight: 700; letter-spacing: 0.05em;">Earning Potential</span>
+                <div style="font-family: var(--fd); font-size: 32px; font-weight: 700; margin: 4px 0;">€6,420</div>
+                <p style="font-size: 12px; color: #E7F3F3; margin: 0;">In 12 open jobs matching your radius</p>
+              </div>
+
+              <h4 style="font-size: 15px; color: var(--ink); margin-bottom: 12px;">Active Jobs Matching You:</h4>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div class="radar-pin-card" style="position: static;" id="radar-job-lead-1">
+                  <strong style="color: var(--teal); font-size: 14px;">Lawn care & hedge trimming</strong>
+                  <div style="font-size: 12px; color: var(--mute); margin-top: 3px;">3.2 km • 3 bids • Closes in 2d 4h</div>
+                  <button class="btn btn-primary" id="btn-open-bid-from-radar" style="padding: 4px 12px; font-size: 12px; margin-top: 8px;">View & Send Bid →</button>
+                </div>
+                <div class="radar-pin-card" style="position: static;">
+                  <strong style="color: var(--ink); font-size: 14px;">Remove two old conifers</strong>
+                  <div style="font-size: 12px; color: var(--mute); margin-top: 3px;">6.8 km • 1 bid • Closes in 3d</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Radar Graphic Representation -->
+            <div class="radar-map-visual">
+              <div class="radar-circle-pulse"></div>
+              <div style="position: absolute; width: 14px; height: 14px; background: var(--teal); border-radius: 50%; box-shadow: 0 0 0 8px rgba(7,126,136,0.3);"></div>
+              
+              <!-- Floating Pin 1 -->
+              <div class="radar-pin-card" style="top: 25%; right: 20%;">
+                <span style="font-weight: 700; color: var(--teal);">📍 Lawn care 120m²</span>
+                <div style="font-size: 11px; color: var(--mute);">3.2 km away • €240 - €320</div>
+              </div>
+
+              <!-- Floating Pin 2 -->
+              <div class="radar-pin-card" style="bottom: 25%; left: 18%;">
+                <span style="font-weight: 700; color: var(--ink);">📍 Terrace wash & sand</span>
+                <div style="font-size: 11px; color: var(--mute);">4.8 km away • €350 - €450</div>
+              </div>
+
+              <div style="position: absolute; bottom: 16px; right: 16px; background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: var(--r-s); font-size: 11px; font-weight: 600;">
+                Radius: 25 km from Amstelveen
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Send an Offer (Contractor Bid Modal) -->
+        <div class="platform-stage-content" id="tab-bid" style="display: none;">
+          <div style="max-width: 680px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--line); border-radius: var(--r-l); padding: 32px; box-shadow: var(--sh-2);">
+            <div style="margin-bottom: 20px;">
+              <span class="status-badge-live status-bids">● In high demand</span>
+              <h3 style="font-size: 22px; color: var(--ink); margin-top: 6px;">Lawn care & hedge trimming, back garden 120 m²</h3>
+              <p style="font-size: 13px; color: var(--mute);">📍 Amstelveen-Noord • 3.2 km from you • Posted by Marta K. (★ 4.8)</p>
+            </div>
+
+            <div style="background: var(--bg); border: 1.5px solid var(--line); border-radius: var(--r-m); padding: 22px; margin-bottom: 20px;">
+              <label style="font-weight: 700; color: var(--ink); display: block; margin-bottom: 6px;">Your Total Price (EUR)</label>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                <span style="font-size: 20px; font-weight: 700; color: var(--teal);">€</span>
+                <input type="number" id="live-bid-price" class="form-input" value="260" style="font-size: 20px; font-weight: 700; max-width: 160px; padding: 8px 14px;">
+                <span style="font-size: 13px; color: var(--mute); font-weight: 600;">EUR incl. materials</span>
+              </div>
+              <span style="font-size: 12px; color: var(--mute);">💡 Similar jobs nearby: €180 – €320</span>
+
+              <div style="margin-top: 18px;">
+                <label style="font-weight: 600; color: var(--ink); font-size: 13px; display: block; margin-bottom: 6px;">When could you finish?</label>
+                <div style="display: flex; gap: 10px;">
+                  <button class="btn btn-secondary" style="padding: 6px 14px; font-size: 12.5px;">Half day</button>
+                  <button class="btn btn-primary" style="padding: 6px 14px; font-size: 12.5px;">1 day (Selected)</button>
+                  <button class="btn btn-secondary" style="padding: 6px 14px; font-size: 12.5px;">2 days</button>
+                </div>
+              </div>
+
+              <div style="margin-top: 16px;">
+                <label style="font-weight: 600; color: var(--ink); font-size: 13px; display: block; margin-bottom: 6px;">What's included?</label>
+                <div style="display: flex; gap: 16px; font-size: 13px;">
+                  <label><input type="checkbox" checked> Green waste removal</label>
+                  <label><input type="checkbox" checked> Own equipment</label>
+                  <label><input type="checkbox" checked> Fully insured</label>
+                </div>
+              </div>
+
+              <div style="margin-top: 16px;">
+                <label style="font-weight: 600; color: var(--ink); font-size: 13px; display: block; margin-bottom: 6px;">Say hello to Marta K. (optional)</label>
+                <textarea class="form-input" style="height: 70px; resize: none; font-size: 13px;">Hi Marta! I can start this coming Monday. Lawn, edges and the full laurel hedge in one visit, and I'll take all the green waste away.</textarea>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 12px; color: var(--mute); display: block;">Offer Summary:</span>
+                <strong style="color: var(--teal-d); font-size: 15px;">€260 • 1 day • Mon 12 Oct</strong>
+              </div>
+              <button class="btn btn-primary btn-lg" id="btn-submit-live-bid" style="padding: 12px 28px;">
+                Submit Offer to Client ✈
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 6: Direct In-App Chat Feature -->
+        <div class="platform-stage-content" id="tab-chat" style="display: none;">
+          <div class="chat-live-container">
+            <!-- Left Contacts List -->
+            <div class="chat-contacts-col">
+              <div style="padding: 16px; border-bottom: 1px solid var(--line);">
+                <input type="text" class="form-input" placeholder="Search conversations..." style="padding: 8px 12px; font-size: 12.5px;">
+              </div>
+              
+              <div class="chat-contact-item active">
+                <div class="avatar-circle" style="background: var(--teal); width: 36px; height: 36px; font-size: 13px;">MK</div>
+                <div style="flex: 1; overflow: hidden;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong style="font-size: 13.5px; color: var(--ink);">Marta K.</strong>
+                    <span style="font-size: 11px; color: var(--mute);">10:22 AM</span>
+                  </div>
+                  <div style="font-size: 12px; color: var(--mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Would Saturday morning at 9:00 AM work?</div>
+                </div>
+              </div>
+
+              <div class="chat-contact-item">
+                <div class="avatar-circle" style="background: #0677BA; width: 36px; height: 36px; font-size: 13px;">DS</div>
+                <div style="flex: 1; overflow: hidden;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong style="font-size: 13.5px; color: var(--ink);">David S.</strong>
+                    <span style="font-size: 11px; color: var(--mute);">08:45 AM</span>
+                  </div>
+                  <div style="font-size: 12px; color: var(--mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Can you bring your own water hose extension?</div>
+                </div>
+              </div>
+
+              <div class="chat-contact-item">
+                <div class="avatar-circle" style="background: var(--mint-d); width: 36px; height: 36px; font-size: 13px;">EV</div>
+                <div style="flex: 1; overflow: hidden;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong style="font-size: 13.5px; color: var(--ink);">Elena V.</strong>
+                    <span style="font-size: 11px; color: var(--mute);">Yesterday</span>
+                  </div>
+                  <div style="font-size: 12px; color: var(--mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Deposit of €210 has been securely funded.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Active Chat Window -->
+            <div class="chat-main-window">
+              <div class="chat-header-bar">
+                <div style="display: flex; gap: 12px; align-items: center;">
+                  <div class="avatar-circle" style="background: var(--teal); width: 38px; height: 38px;">MK</div>
+                  <div>
+                    <strong style="font-size: 15px; color: var(--ink); display: block;">Marta K.</strong>
+                    <span style="font-size: 12px; color: var(--mute);">Lawn care & hedge trimming (120 m²) • Amstelveen</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <button class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px;" onclick="alert('Connecting encrypted voice call with client...')">📞 Call Client</button>
+                  <button class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px;">View Specs</button>
+                </div>
+              </div>
+
+              <div class="chat-messages-area" id="chat-messages-area">
+                <div class="chat-msg-row incoming">
+                  <div class="chat-bubble">
+                    Hello! I saw your proposal for the 120 m² lawn care and hedge trimming. Does your quote of €260 include taking away all the hedge clippings?
+                  </div>
+                </div>
+
+                <div class="chat-msg-row outgoing">
+                  <div class="chat-bubble">
+                    Hi Marta! Yes, absolutely. The €260 is an all-inclusive fixed price covering lawn mowing, edging, trimming of the 18m laurel hedge, and full green waste haul-away. We leave your garden completely spotless.
+                  </div>
+                </div>
+
+                <div class="chat-msg-row incoming">
+                  <div class="chat-bubble">
+                    That sounds wonderful. There is easy side gate access to the garden. Would Saturday morning around 9:00 AM work for you?
+                  </div>
+                </div>
+              </div>
+
+              <div class="chat-input-row">
+                <input type="text" id="live-chat-input" class="form-input" placeholder="Type your reply to Marta K. (e.g. 'Yes, Saturday 9:00 AM is perfect!')...">
+                <button class="btn btn-primary" id="btn-send-live-chat" style="padding: 10px 22px;">Send ↵</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL: "YOUR JOB HAS BEEN ADDED" (From Screenshot 93 / 02b Job posted.png)
+       ========================================================================== -->
+  <div class="modal-overlay" id="job-added-modal">
+    <div class="success-modal-card" style="max-width: 460px; padding: 36px 30px;">
+      <button class="modal-close-btn" id="job-added-close-btn">&times;</button>
+      
+      <div class="success-icon-badge" style="width: 60px; height: 60px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <h3 style="font-size: 22px; color: var(--ink); margin-bottom: 8px;">Your job has been added.</h3>
+      <p style="color: var(--mute); font-size: 14.5px; line-height: 1.5; margin-bottom: 24px;">
+        We've told <strong>34 matching providers</strong> in Amsterdam. We'll let you know as soon as the first quote arrives.
+      </p>
+
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button class="btn btn-secondary" id="btn-post-another-job" style="padding: 10px 18px; font-size: 13.5px;">Post another</button>
+        <button class="btn btn-primary" id="btn-view-job-quotes" style="padding: 10px 20px; font-size: 13.5px;">View my job & quotes →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       POPULAR CATEGORIES
+       ========================================================================== -->
+  <section class="categories-section" id="categories">
+    <div class="container text-center">
+      <span class="section-label" data-i18n="catLabel">Explore Categories</span>
+      <h2 class="section-title" data-i18n="catTitle">Popular services covered by Loqelo</h2>
+      <p class="section-subtitle" data-i18n="catSub">
+        From everyday maintenance to complex renovations.
+      </p>
+
+      <div class="categories-grid">
+        <!-- 1. Home -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/home.jpg" alt="Home repairs" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catHome">Home & Repairs</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 2. Garden -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/garden.jpg" alt="Garden care" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box" style="background: var(--mint-d);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catGarden">Garden & Outdoor</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 3. Construction -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/build.jpg" alt="Construction" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catConstruction">Construction</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 4. Installations -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/inst.jpg" alt="Installations" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catInstallations">Installations & Electric</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 5. Pets -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/pets.jpg" alt="Pet care" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="4" r="2"></circle><circle cx="18" cy="8" r="2"></circle><circle cx="20" cy="16" r="2"></circle><path d="M9 10a5 5 0 0 1 5 5v5a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-5a5 5 0 0 1 5-5z"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catPets">Pet Care</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 6. Vehicles -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/vehicles.jpg" alt="Vehicle care" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <span class="cat-name" data-i18n="catVehicles">Vehicles & Detailing</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 7. Personal & Care -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/care.jpg" alt="Personal care" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <span class="cat-name" data-i18n="catPersonal">Personal & Care</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 8. Moving & Transport -->
+        <div class="category-card">
+          <div class="category-img-wrap">
+            <img src="assets/images/photos/moving.jpg" alt="Moving and transport" class="category-photo">
+          </div>
+          <div class="category-body">
+            <div class="cat-title-row">
+              <div class="cat-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 4 1 10 7 10 7 4 1 4"></polygon><polygon points="8 4 8 10 14 10 14 4 8 4"></polygon><polygon points="15 4 15 10 21 10 21 4 15 4"></polygon><polygon points="1 11 1 17 7 17 7 11 1 11"></polygon><polygon points="8 11 8 17 14 17 14 11 8 11"></polygon><polygon points="15 11 15 17 21 17 21 11 15 11"></polygon></svg>
+              </div>
+              <span class="cat-name" data-i18n="catMoving">Moving & Transport</span>
+            </div>
+            <span class="cat-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DUAL AUDIENCE CARDS (CUSTOMERS VS CONTRACTORS)
+       From Client Approved Design #37726396
+       ========================================================================== -->
+  <section class="dual-audience-section" id="for-providers">
+    <div class="container">
+      <div class="dual-cards-grid">
+        
+        <!-- Card 1: For Customers -->
+        <div class="audience-card">
+          <div>
+            <div class="audience-badge" data-i18n="customerCardBadge">For Customers</div>
+            <h3 class="audience-title" data-i18n="customerCardTitle">Need a Service? Find the Right Help.</h3>
+            <p class="audience-desc" data-i18n="customerCardDesc">
+              Tell us what you need and let Loqelo connect you with verified pros for home, garden, and commercial projects.
+            </p>
+            <ul class="audience-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero spam: receive only tailored, fixed-price offers</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Compare ratings, completed jobs, and verified client reviews</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Always free for homeowners and businesses to post</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#waitlist" class="btn btn-mint btn-lg" data-i18n="btnPostJob">Get Early Customer Access</a>
+          </div>
+        </div>
+
+        <!-- Card 2: For Contractors -->
+        <div class="audience-card audience-contractor">
+          <div>
+            <div class="audience-badge" data-i18n="contractorCardBadge">For Contractors & Service Providers</div>
+            <h3 class="audience-title" data-i18n="contractorCardTitle">Need More Jobs? Find the Right Work.</h3>
+            <p class="audience-desc" data-i18n="contractorCardDesc">
+              Discover high-value jobs matching your trade and working radius. Send offers and grow your business with 0% commission at launch.
+            </p>
+            <ul class="audience-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Local jobs dispatched to your phone in real time</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Direct client communication without middlemen</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Exclusive Founding Contractor Badge & 0% fees for 12 months</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="#waitlist" class="btn btn-primary btn-lg" data-i18n="btnStartCollab">Join as a Service Provider</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LAUNCH COUNTDOWN SECTION (February 2027)
+       ========================================================================== -->
+  <section class="countdown-section">
+    <div class="container countdown-wrap">
+      <h2 class="countdown-title" data-i18n="countdownTitle">Launching Globally February 2027</h2>
+      <p class="countdown-subtitle" data-i18n="countdownSub">
+        Sign up today to secure early adopter advantages, priority matching, and zero-fee bookings for life.
+      </p>
+
+      <div class="countdown-timer-grid">
+        <div class="timer-box">
+          <span class="timer-number" id="days">00</span>
+          <span class="timer-label" data-i18n="days">Days</span>
+        </div>
+        <div class="timer-box">
+          <span class="timer-number" id="hours">00</span>
+          <span class="timer-label" data-i18n="hours">Hours</span>
+        </div>
+        <div class="timer-box">
+          <span class="timer-number" id="minutes">00</span>
+          <span class="timer-label" data-i18n="minutes">Minutes</span>
+        </div>
+        <div class="timer-box">
+          <span class="timer-number" id="seconds">00</span>
+          <span class="timer-label" data-i18n="seconds">Seconds</span>
+        </div>
+      </div>
+
+      <a href="#waitlist" class="btn btn-mint btn-lg" data-i18n="btnJoinWaitlist">Secure Your Early Spot</a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WAITLIST SIGN-UP FORMS (CORE DELIVERABLE)
+       ========================================================================== -->
+  <section class="waitlist-section" id="waitlist">
+    <div class="container text-center">
+      <span class="section-label" data-i18n="waitlistLabel">Early Access</span>
+      <h2 class="section-title" data-i18n="waitlistTitle">Be the first to experience Loqelo.</h2>
+      <p class="section-subtitle" data-i18n="waitlistSub">
+        Select your role below to join the pre-launch waitlist and receive exclusive early updates.
+      </p>
+
+      <div class="waitlist-card-box">
+        <!-- Role Toggle Bar -->
+        <div class="waitlist-toggle-bar">
+          <button class="waitlist-tab-btn active" data-role="customer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span data-i18n="tabClientWaitlist">I am a Customer</span>
+          </button>
+          <button class="waitlist-tab-btn" data-role="contractor">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span data-i18n="tabContractorWaitlist">I am a Contractor / Pro</span>
+          </button>
+        </div>
+
+        <!-- Form 1: Customers -->
+        <form class="form-body-wrap text-left" id="customer-waitlist-form">
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="loq_cust_hp" id="hp-cust" class="hp-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label class="form-label" for="customer-email">
+              <span data-i18n="labelEmail">Email Address</span> *
+            </label>
+            <input type="email" id="customer-email" class="form-input" placeholder="you@domain.com" required>
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label class="form-label" for="customer-country">
+                <span data-i18n="labelCountry">Country of Residence</span> *
+              </label>
+              <select id="customer-country" class="form-select" required>
+                <!-- Populated via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="labelAccountType">Account Type (Optional)</span>
+              </label>
+              <div class="radio-pill-group">
+                <label class="radio-pill-item">
+                  <input type="radio" name="cust-type" value="Individual" checked>
+                  <span class="radio-pill-label" data-i18n="typeIndividual">Individual</span>
+                </label>
+                <label class="radio-pill-item">
+                  <input type="radio" name="cust-type" value="Business">
+                  <span class="radio-pill-label" data-i18n="typeBusiness">Business</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="consent-group">
+            <input type="checkbox" id="customer-consent" required>
+            <label for="customer-consent" data-i18n="consentText">
+              I agree to receive communications regarding project launches, updates, and early access benefits from Loqelo in accordance with the Privacy Policy.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit-waitlist" data-i18n="btnSubmitCustomer">
+            Join Waitlist as Customer
+          </button>
+        </form>
+
+        <!-- Form 2: Contractors -->
+        <form class="form-body-wrap text-left" id="contractor-waitlist-form" style="display: none;">
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="loq_pro_hp" id="hp-pro" class="hp-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label class="form-label" for="contractor-email">
+              <span data-i18n="labelEmail">Email Address</span> *
+            </label>
+            <input type="email" id="contractor-email" class="form-input" placeholder="pro@company.com" required>
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label class="form-label" for="contractor-country">
+                <span data-i18n="labelServiceCountry">Country Where You Provide Services</span> *
+              </label>
+              <select id="contractor-country" class="form-select" required>
+                <!-- Populated via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contractor-trade">
+                <span data-i18n="labelTrade">Primary Trade / Category</span> *
+              </label>
+              <select id="contractor-trade" class="form-select" required>
+                <option value="Cleaning & Housekeeping">Cleaning & Housekeeping</option>
+                <option value="Gardening & Landscaping">Gardening & Landscaping</option>
+                <option value="Construction & Renovation">Construction & Renovation</option>
+                <option value="Plumbing & Installations">Plumbing & Installations</option>
+                <option value="Electrical Services">Electrical Services</option>
+                <option value="Auto & Vehicle Care">Auto & Vehicle Care</option>
+                <option value="Moving & Hauling">Moving & Hauling</option>
+                <option value="Other Specialist">Other Specialist</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="labelAccountType">Account Type (Optional)</span>
+            </label>
+            <div class="radio-pill-group">
+              <label class="radio-pill-item">
+                <input type="radio" name="pro-type" value="Business" checked>
+                <span class="radio-pill-label" data-i18n="typeBusiness">Company / Business</span>
+              </label>
+              <label class="radio-pill-item">
+                <input type="radio" name="pro-type" value="Individual">
+                <span class="radio-pill-label" data-i18n="typeIndividual">Sole Trader / Pro</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="consent-group">
+            <input type="checkbox" id="contractor-consent" required>
+            <label for="contractor-consent" data-i18n="consentText">
+              I agree to receive communications regarding project launches, updates, and early access benefits from Loqelo in accordance with the Privacy Policy.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit-waitlist" data-i18n="btnSubmitContractor">
+            Join Waitlist as Contractor
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONFIRMATION & CONFETTI MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="success-modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div class="success-icon-badge">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+
+      <h3 class="section-title" style="font-size: 1.8rem;" data-i18n="successTitle">You're on the Waitlist!</h3>
+      <p style="color: var(--mute); font-size: 15px;" data-i18n="successDesc">
+        Thank you for joining Loqelo. We've reserved your early access spot. Check your email for confirmation.
+      </p>
+
+      <div class="queue-badge-box">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--teal); font-weight: 700;">Waitlist Priority Number</div>
+        <span id="queue-number">#1,428</span>
+      </div>
+
+      <p style="font-size: 13.5px; font-weight: 600; color: var(--ink); margin-top: 10px;" data-i18n="shareQueue">
+        Share with friends & colleagues to jump ahead:
+      </p>
+
+      <div class="share-invite-row">
+        <button class="share-btn" id="btn-copy-link" data-i18n="copyLink">Copy Invite Link</button>
+        <a href="https://twitter.com/intent/tweet?text=Excited%20for%20the%20launch%20of%20Loqelo%20-%20Everything%20your%20place%20needs!%20Join%20the%20waitlist%20at%20https://loqelo.com" target="_blank" class="share-btn" rel="noopener">Share on X</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://loqelo.com" target="_blank" class="share-btn" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ADMIN CONTACT MANAGEMENT & STATS DRAWER (CLIENT SPEC)
+       ========================================================================== -->
+  <aside class="admin-drawer" id="admin-drawer" aria-label="Waitlist Admin Manager">
+    <div class="admin-drawer-header">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+        <h4 style="font-size: 18px; font-weight: 700; color: var(--ink);">Loqelo Contact Manager</h4>
+      </div>
+      <button class="modal-close-btn" id="admin-close-btn" style="position: static;">&times;</button>
+    </div>
+
+    <div class="admin-drawer-body">
+      <!-- Statistics Cards -->
+      <div class="admin-stat-grid">
+        <div class="admin-stat-card">
+          <div class="admin-stat-val" id="stat-visitors">0</div>
+          <div class="admin-stat-lbl">Visitors</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-val" id="stat-customers" style="color: var(--mint-d);">0</div>
+          <div class="admin-stat-lbl">Customers</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-val" id="stat-contractors">0</div>
+          <div class="admin-stat-lbl">Contractors</div>
+        </div>
+      </div>
+
+      <div class="admin-filter-bar">
+        <label for="admin-filter-role" style="font-size: 13px; font-weight: 600;">Filter Entries:</label>
+        <select id="admin-filter-role" class="form-select" style="padding: 6px 12px; font-size: 13px; width: auto;">
+          <option value="all">All Contacts</option>
+          <option value="customer">Customers Only</option>
+          <option value="contractor">Contractors Only</option>
+        </select>
+      </div>
+
+      <!-- Entries Table -->
+      <div class="admin-entries-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Country</th>
+              <th>Type</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Actions -->
+      <div class="admin-actions-bar">
+        <button class="btn btn-primary" id="btn-export-csv" style="flex:1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Export CSV File
+        </button>
+      </div>
+      <p style="font-size: 12px; color: var(--mute); margin-top: 14px; text-align: center;">
+        Data stored securely in local browser storage. Ready for direct export to Excel, Google Sheets, Mailchimp, or CRM.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       COOKIE CONSENT BANNER (GDPR COMPLIANT)
+       ========================================================================== -->
+  <div class="cookie-banner" id="cookie-banner">
+    <p style="font-size: 13.5px; color: var(--ink2); line-height: 1.45;" data-i18n="cookieText">
+      We use essential cookies and anonymized statistics (Google Analytics 4) to improve your experience. No personal contact details are ever shared.
+    </p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary" id="btn-cookie-accept" style="padding: 8px 18px; font-size: 13px;" data-i18n="btnAcceptCookies">Accept All</button>
+      <button class="btn btn-secondary" id="btn-cookie-essential" style="padding: 8px 18px; font-size: 13px;" data-i18n="btnEssentialCookies">Essential Only</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" height="32">
+          <p data-i18n="footerDesc">
+            The modern platform connecting home, garden, and office needs with top-rated local professionals.
+          </p>
+          <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--teal-d);">
+            Tagline: “Everything your place needs.”
+          </div>
+
+          <!-- Social Media Channels with Icons -->
+          <div class="footer-social-bar">
+            <span class="social-bar-label">Follow Loqelo:</span>
+            <div class="social-links-row">
+              <a href="https://x.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on X (Twitter)" title="X (Twitter)">
+                <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://linkedin.com/company/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://facebook.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+              </a>
+              <a href="https://instagram.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://youtube.com/@loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footerNavProduct">Product</h5>
+          <ul class="footer-links-list">
+            <li><a href="#how-it-works" data-i18n="howItWorksLabel">How It Works</a></li>
+            <li><a href="#showcase" data-i18n="screensLabel">Platform Screens</a></li>
+            <li><a href="#categories" data-i18n="catLabel">Categories</a></li>
+            <li><a href="#video" data-i18n="btnWatchVideo">Promotional Video</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footerNavCompany">Company</h5>
+          <ul class="footer-links-list">
+            <li><a href="#for-providers" data-i18n="contractorCardBadge">For Providers</a></li>
+            <li><a href="#waitlist" data-i18n="waitlistLabel">Early Access</a></li>
+            <li><a href="mailto:contact@loqelo.com">contact@loqelo.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footerNavLegal">Legal & Privacy</h5>
+          <ul class="footer-links-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Launch Roadmap: Feb 2027</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026-2027 Loqelo Inc. <span data-i18n="rightsReserved">All rights reserved. Loqelo.com</span>
+        </div>
+        <div style="display:flex; align-items:center; gap: 16px;">
+          <!-- Discreet Admin Panel link for client contact management -->
+          <button class="admin-toggle-link" id="admin-toggle-link" title="Open Contact Manager (Shortcut: Alt+A)">
+            ⚙️ Admin / Signups
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Worldwide Google Translate Engine Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
