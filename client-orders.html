@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Orders & Dashboard — Loqelo</title>
+  <meta name="description" content="Manage your active and completed service orders on Loqelo. Track quotes, ratings, and contractor assignments.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/loqelo-logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LOQELO2027"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LOQELO2027');
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo-link" aria-label="Loqelo Home">
+        <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" class="brand-logo-img">
+      </a>
+
+      <nav id="site-main-nav" aria-label="Main Navigation">
+        <div class="mobile-drawer-header">
+          <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" class="brand-logo-img" style="height:28px;">
+          <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="index.html#showcase" class="nav-link">Platform</a></li>
+          <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="index.html#for-providers" class="nav-link">For Providers</a></li>
+          <li><a href="dashboard.html" class="nav-link" style="color:var(--teal); font-weight:700;">Dashboard <span class="badge-live-pill">Live App</span></a></li>
+        </ul>
+
+        <div class="mobile-drawer-subpages">
+          <div class="mobile-drawer-title">Platform Experience Apps</div>
+          <div class="mobile-drawer-grid">
+            <a href="post-job.html" class="mobile-drawer-pill"><span>📝</span> Post a Job</a>
+            <a href="client-orders.html" class="mobile-drawer-pill"><span>📋</span> Orders</a>
+            <a href="quotes.html" class="mobile-drawer-pill"><span>💰</span> Quotes</a>
+            <a href="contractor-radar.html" class="mobile-drawer-pill"><span>📡</span> Radar</a>
+            <a href="bidding.html" class="mobile-drawer-pill"><span>🤝</span> Bidding</a>
+            <a href="chat.html" class="mobile-drawer-pill"><span>💬</span> Chat</a>
+          </div>
+        </div>
+
+        <div class="mobile-drawer-cta">
+          <a href="index.html#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="custom-lang-selector-wrap">
+          <button class="custom-lang-btn" id="custom-lang-btn" aria-haspopup="true" aria-expanded="false" title="Change Language">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="custom-current-lang">🇬🇧 English</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <ul class="custom-lang-dropdown" id="custom-lang-dropdown">
+            <li class="custom-lang-opt active" data-lang="en">🇬🇧 English</li>
+            <li class="custom-lang-opt" data-lang="pl">🇵🇱 Polski</li>
+            <li class="custom-lang-opt" data-lang="de">🇩🇪 Deutsch</li>
+            <li class="custom-lang-opt" data-lang="fr">🇫🇷 Français</li>
+            <li class="custom-lang-opt" data-lang="es">🇪🇸 Español</li>
+            <li class="custom-lang-opt" data-lang="nl">🇳🇱 Nederlands</li>
+            <li class="custom-lang-opt" data-lang="it">🇮🇹 Italiano</li>
+            <li class="custom-lang-opt" data-lang="bn">🇧🇩 বাংলা</li>
+            <li class="custom-lang-opt" data-lang="ar">🇸🇦 العربية</li>
+            <li class="custom-lang-opt" data-lang="zh-CN">🇨🇳 中文</li>
+          </ul>
+        </div>
+        <div id="google_translate_element"></div>
+
+        <a href="index.html#waitlist" class="btn btn-primary">Join the Waitlist</a>
+
+        <!-- Responsive Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  <!-- ==========================================================================
+       SUBPAGE HERO
+       ========================================================================== -->
+  <section class="subpage-hero">
+    <div class="container">
+      <div class="subpage-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="dashboard.html">Dashboard</a>
+        <span>/</span>
+        <span>Client Orders</span>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h1 class="subpage-hero-title">2. Client Dashboard &amp; Orders Tracker</h1>
+          <p class="subpage-hero-desc">
+            Central command for customers. Monitor live requests, compare received quotes in real time, review contractor profiles, and track jobs in progress.
+          </p>
+        </div>
+        <a href="post-job.html" class="btn btn-primary">+ Post a New Job</a>
+      </div>
+
+      <!-- Quick Platform Navigation Pills -->
+      <div class="subpage-nav-pills">
+        <a href="dashboard.html" class="subpage-nav-pill">📊 Master Hub</a>
+        <a href="post-job.html" class="subpage-nav-pill">📝 1. Post a Job</a>
+        <a href="client-orders.html" class="subpage-nav-pill active">📋 2. Client Orders</a>
+        <a href="quotes.html" class="subpage-nav-pill">🏷️ 3. Quotes & Spread</a>
+        <a href="contractor-radar.html" class="subpage-nav-pill">📡 4. Contractor Radar</a>
+        <a href="bidding.html" class="subpage-nav-pill">💼 5. Send an Offer</a>
+        <a href="chat.html" class="subpage-nav-pill">💬 6. Direct Chat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN ORDERS PANEL
+       ========================================================================== -->
+  <main class="subpage-main-wrap">
+    <div class="container">
+      <div class="client-dashboard-panel">
+        <div class="dashboard-header-row">
+          <div>
+            <span style="font-size: 12px; color: var(--mute); font-weight: 600;">Good afternoon,</span>
+            <h3 style="font-size: 24px; color: var(--ink);">Anna Kowalska (Client Account)</h3>
+          </div>
+          <div class="user-stat-pills">
+            <div class="user-stat-pill">
+              <strong style="color: var(--teal); font-size: 16px;">23</strong><br>Orders
+            </div>
+            <div class="user-stat-pill">
+              <strong style="color: var(--mint-d); font-size: 16px;">92%</strong><br>Completion
+            </div>
+            <div class="user-stat-pill">
+              <strong style="color: var(--amber); font-size: 16px;">★ 4.8</strong><br>Rating
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-bottom: 20px;">
+          <button class="btn btn-primary" style="padding: 6px 16px; font-size: 13px;">Active Orders (4)</button>
+          <button class="btn btn-secondary" style="padding: 6px 16px; font-size: 13px;">Completed Orders (19)</button>
+        </div>
+
+        <!-- Orders Cards List -->
+        <div class="orders-cards-list">
+          <!-- Order 1 -->
+          <div class="order-live-card">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/photos/home.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Order">
+              <div>
+                <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">House, window &amp; car cleaning</h4>
+                <p style="font-size: 12.5px; color: var(--mute);">Amsterdam-Zuid, 1077 AB • Sat 10 Oct • Bids close in 1d 6h</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <span class="status-badge-live status-bids">● 5 bids received</span>
+              <a href="quotes.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">View Quotes (5) →</a>
+            </div>
+          </div>
+
+          <!-- Order 2 -->
+          <div class="order-live-card">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/photos/garden.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Garden">
+              <div>
+                <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Lawn care &amp; hedge trimming</h4>
+                <p style="font-size: 12.5px; color: var(--mute);">Amstelveen, 1181 JA • Wed 14 Oct • 12 providers viewed it</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <span class="status-badge-live status-waiting">● Waiting for bids</span>
+              <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;" onclick="alert('12 providers nearby have viewed this request. Quotes usually arrive within 2 hours.')">Details →</button>
+            </div>
+          </div>
+
+          <!-- Order 3 -->
+          <div class="order-live-card">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/photos/inst.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Installations">
+              <div>
+                <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Bathroom tap &amp; shower repair</h4>
+                <p style="font-size: 12.5px; color: var(--mute);">Amsterdam-Oost • Sat 3 Oct • Bidding closed: 7 bids</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <span class="status-badge-live status-contractor">● Contractor selected</span>
+              <a href="chat.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;">Message Pro →</a>
+            </div>
+          </div>
+
+          <!-- Order 4 -->
+          <div class="order-live-card">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <img src="assets/images/photos/moving.jpg" width="60" height="60" style="border-radius: var(--r-s); object-fit: cover;" alt="Moving">
+              <div>
+                <h4 style="font-size: 16px; color: var(--ink); margin-bottom: 4px;">Move 2-room flat to Utrecht</h4>
+                <p style="font-size: 12.5px; color: var(--mute);">VanGo Movers on the way</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <span class="status-badge-live status-progress">● In progress</span>
+              <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 13px;" onclick="alert('VanGo Movers is currently en route. Estimated arrival in 25 minutes.')">Track Move →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/loqelo-logo.svg" alt="Loqelo Logo" height="32">
+          <p>The modern platform connecting home, garden, and office needs with top-rated local professionals.</p>
+          <div style="margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--teal-d);">
+            Tagline: “Everything your place needs.”
+          </div>
+
+          <div class="footer-social-bar">
+            <span class="social-bar-label">Follow Loqelo:</span>
+            <div class="social-links-row">
+              <a href="https://x.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on X" title="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://linkedin.com/company/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+              <a href="https://facebook.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg></a>
+              <a href="https://instagram.com/loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="https://youtube.com/@loqelo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow Loqelo on YouTube" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform Modules</h5>
+          <ul class="footer-links-list">
+            <li><a href="post-job.html">Post a Job Wizard</a></li>
+            <li><a href="client-orders.html">Client Orders</a></li>
+            <li><a href="quotes.html">Quotes &amp; Spread</a></li>
+            <li><a href="contractor-radar.html">Contractor Radar</a></li>
+            <li><a href="bidding.html">Send an Offer</a></li>
+            <li><a href="chat.html">In-App Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#for-providers">For Providers</a></li>
+            <li><a href="index.html#waitlist">Join Waitlist</a></li>
+            <li><a href="mailto:contact@loqelo.com">contact@loqelo.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal &amp; Privacy</h5>
+          <ul class="footer-links-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Launch Roadmap: Feb 2027</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026-2027 Loqelo Inc. All rights reserved. Loqelo.com
+        </div>
+        <div>
+          <a href="index.html" style="color: var(--teal); font-weight: 600; text-decoration: none;">← Return to Main Website</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
